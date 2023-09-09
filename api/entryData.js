@@ -77,10 +77,23 @@ const filterEntry = (searchValue, uid) => new Promise((resolve, reject) => {
   }).catch(reject);
 });
 
+const searchEntries = (searchValue, uid) => new Promise((resolve, reject) => {
+  getEntries(uid).then((entryArray) => {
+    const result = entryArray.filter((entry) => (
+      entry.title.toLowerCase().includes(searchValue)
+      || entry.definition.toLowerCase().includes(searchValue)
+      || entry.languageTech.toLowerCase().includes(searchValue)
+    ));
+
+    resolve(result);
+  }).catch(reject);
+});
+
 export {
   getEntries,
   getSingleEntry,
   filterEntry,
+  searchEntries,
   deleteEntry,
   updateEntry,
   createEntry

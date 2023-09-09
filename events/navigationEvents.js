@@ -1,11 +1,15 @@
-/* eslint-disable no-undef */
-// import createEntry from '../components/forms/createEntry';
+import { searchEntries } from '../api/entryData';
+import entryCards from '../pages/entries';
 
-const navEvents = () => {
-  // const formModal = bootstrap.Modal.getOrCreateInstance('#nav-bar');
-  // formModal.hide();
-  document.querySelector('#create-entry').addEventListener('click', () => {
-    $('#exampleModal').modal();
+const navEvents = (user) => {
+  document.querySelector('#search').addEventListener('keyup', (e) => {
+    const searchValue = document.querySelector('#search').value.toLowerCase();
+    if (e.keyCode === 13) {
+      searchEntries(searchValue, user.uid).then((search) => {
+        entryCards(search);
+      });
+      document.querySelector('#search').value = '';
+    }
   });
 };
 

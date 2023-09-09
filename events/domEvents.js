@@ -51,6 +51,18 @@ const domEvents = (user) => {
     if (e.target.id.includes('view-all-entries')) {
       getEntries(user.uid).then((array) => entryCards(array));
     }
+    if (e.target.id.includes('update-entry')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleEntry(firebaseKey).then((item) => editEntry(item));
+    }
+    if (e.target.id.includes('delete-entry')) {
+      if (window.confirm('Are you sure you want to delete this entry?')) {
+        const [, firebaseKey] = e.target.id.split('--');
+        deleteEntry(firebaseKey).then(() => {
+          getEntries(user.uid).then((array) => entryCards(array));
+        });
+      }
+    }
   });
 };
 

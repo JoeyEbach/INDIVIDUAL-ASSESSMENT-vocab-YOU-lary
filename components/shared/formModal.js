@@ -4,8 +4,8 @@ const formModal = () => {
   let domString = '';
   domString += `
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trigger">
-    Create Entry
+  <button type="button" class="btn btn-primary create-entry" data-bs-toggle="modal" data-bs-target="#trigger">
+    New codeWord
   </button>
   
   <!-- Modal -->
@@ -13,7 +13,7 @@ const formModal = () => {
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Create A New Entry</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Create A New codeWord</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div id="create" class="modal-body">
