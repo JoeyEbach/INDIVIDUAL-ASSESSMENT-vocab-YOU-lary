@@ -1,80 +1,38 @@
-# Q2 - Individual Assessment: Vocab-YOU-lary
+    #Project Name: "codeWord"
 
-[VIEW PROJECT INSTRUCTIONS](./PROJECT_INSTRUCTIONS.MD)
+    #Project Overview: codeWord is an app that allows users to create their own tech language 
+     vocabulary cards. Once created, the user is able to view, edit, delete, search, and filter 
+     through their cards.    
+   
+    #ERD: https://dbdiagram.io/d/64f36d4402bd1c4a5edaa299
+    
+    #Data Flowchart: https://lucid.app/lucidchart/d5b3c28d-17f6-4a40-be13-e02bfc70df58/edit?viewport_loc=-744%2C-111%2C1399%2C924%2C0_0&invitationId=inv_406a1c68-033b-4d09-be07-7b3452e114e4)   
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [Console messages](#console-messages)
-    - [Including images with webpack](#including-images-with-webpack)
-    - [Importing CSS](#importing-cssscss)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
+    #Postman: https://www.postman.com/joeyebach/workspace/public-workspace/collection/28202865-0c724d67-a33c-4e01-b7df-6632c230a8f6? action=share&creator=28202865
+    
+    #Deployed Site: https://main--ebach-assessment-codeword.netlify.app/
 
-## Get Started
+    #Project Board: https://github.com/users/JoeyEbach/projects/2/views/1
 
-1. Clone your new repo to your local machine
+    #User Description | Problem Solved: codeWord assists budding software engineers in studying and memorizing new terms and 
+     concepts related to the tech languages they are learning. 
+    
+    #Features: 
+       [1] Log in and log out using a Google account
+       [2] Create new vocabulary cards that display the word, definition, tech language, and               the date and time 
+          of the last card update
+       [3] View, edit, delete vocabulary cards
+       [4] Filter through vocabulary cards using the displayed filter buttons
+       [5] Search for a card that matches the word, definition, or tech language using the 
+          search bar
 
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. Rename the `.sample.env` file to `.env` file. The final file name should be `.env`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
+    #Project Screenshots: 
+       [1] https://github.com/JoeyEbach/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/137849948/56185a91-8843-4efe-9601-42f7216fabbb
+       [2] https://github.com/JoeyEbach/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/137849948/932fd6e0-29a4-42ac-9e20-43174075070d
+       [3] https://github.com/JoeyEbach/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/137849948/b2c994e6-9a68-430c-ba59-89df21cdae64
 
-### If you see this, you are set to go!
-![lit-screen](https://user-images.githubusercontent.com/29741570/190486162-27e9032d-266f-4962-a85c-fc40c58f33db.png)
+    #Repo: https://github.com/JoeyEbach/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary.git
 
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
-- You will no longer be using the `hs -o` command. To start your server, you will run `npm start`
+    #Contributors: Joey Ebach [https://github.com/JoeyEbach]
 
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw an error in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however for messages. These need to all be removed before pushing to production unless they contain vital info for the user/developer.
-
-![notacceptable](https://user-images.githubusercontent.com/29741570/190486163-3dd8640f-5dda-4f73-9436-6020fc9e00c4.png)
-
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
-
-```js
-import cat from './assets/cat.jpg';
-
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
-
-document.getElementById('cat').innerHTMl = domString;
-```
-
-### Importing CSS/SCSS
-**NOTE:** We will be using SCSS files. They are used the same way your CSS files work, with some added benefits that we will discuss later.
-
-Since Webpack is making the connection to the JS and CSS for us and we are no longer manually adding links or script tags to our HTML, we have to get our styles to the application some way...
-
-Here is how we add our styles using webpack:
-
-```js
-import '../styles/main.scss';
-
-const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
-};
-
-init();
-```
-
-### Deploying on Netlify
-
-- Build Command: `npm run build`
-- Publish directory: `dist`
-- Add Environmental Variables (NOT REQUIRED for Apps that do not use API Keys, etc)
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-
-- Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-        
-## More Info and Resources on Webpack
-- Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
-- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+    #Loom Video Walkthrough: 
