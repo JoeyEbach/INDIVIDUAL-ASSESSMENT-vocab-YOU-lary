@@ -23,7 +23,7 @@ const editEntry = (obj = {}) => {
     <option value="React">React</option>
     <option value="C#">C#</option>
   </select>
-    <button type="submit" class="btn btn-primary" id="edit-form">Submit</button>
+    <button type="submit" class="btn btn-primary edit-submit" id="edit-form">Submit</button>
     <button type="button" id="cancel-btn" class="btn btn-primary">Cancel</button>
   </form>
   

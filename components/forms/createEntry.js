@@ -18,7 +18,7 @@ const newEntry = () => {
     <option value="React">React</option>
     <option value="C#">C#</option>
   </select>
-    <button type="submit" class="btn btn-primary" id="create-entry" data-bs-dismiss="modal">Submit</button>
+    <button type="submit" class="btn btn-primary submit" id="create-entry" data-bs-dismiss="modal">Submit</button>
 `;
 
   return domString;

@@ -1,5 +1,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Fira+Sans:ital,wght@0,100;1,100&family=Noto+Sans+Cypro+Minoan&family=Oswald:wght@700&family=Vidaloka&display=swap');
+
 
 body {
   background-color: black;
@@ -20,17 +22,302 @@ body {
 .card {
   justify-content: center;
   margin-bottom: 30px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#title {
+  font-weight: bold;
+  display: block;
+  justify-content: flex-start;
+  color: white;
+}
+
+#definition {
+  font-size: 14px;
+  max-height: 100px;
+  overflow: scroll;
+  color: white;
+}
+
+#lang-tech {
+  display: flex;
+  color: #89C611;
+  font-weight: extra-bold;
+}
+
+.lang {
+  justify-content: flex-start;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #595B5F;
+  border: none;
+}
+
+#date-time {
+  font-size: 12px;
+  color: gray;
+  opacity: 0.7;
 }
 
 #filter-buttons {
   margin-top: 50px;
 }
 
+.card-btns {
+  align-items: flex-end;
+}
+
+.card-btn {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 12px;
+  background-color: #333436;
+  border: none;
+  opacity: 0.8;
+}
+
+.card-btn:hover {
+  background-color: #595B5F;
+}
+
+.delete {
+  background-color: #B41B70;
+}
+
+.filter {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+  background-color: #4089A5;
+  border: none;
+}
+
+.all-filter {
+  background-color: #B41B70;
+  font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  border: none;
+}
+
+.all-filter:hover {
+  background-color: #D12082;
+}
+
 .navbar-brand {
+  color: #89C611;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#nav-bar {
+  background-color: #333131;
+  display: flexbox;
+}
+
+.navbar {
+  background-color: #333131;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  width: 100%;
+  display: flexbox;
+  border-bottom: solid .5px #89C611;
+  margin: 0px;
+}
+
+#logButton {
+  display: block;
+  justify-content: flex-start;
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.logout {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+}
+
+.create-entry {
+  background-color: #B41B70;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+  border: none;
+  position: absolute;
+  right: 125px;
+  top: 2px;
+}
+
+.create-entry:hover {
+  background-color: #D12082;
+}
+
+#google-auth {
+  justify-content: flex-end;
+  background-color: #89C611;
+  font-size: 14px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  border: none;
+}
+
+#google-auth:hover {
+  background-color: #4089A5;
+}
+
+.search {
+justify-content: center;
+font-family: 'Bricolage Grotesque', sans-serif;
+border: solid .5px #89C611;
+}
+
+.search-input {
+  font-size: 14px;
+  border-color: #89C611;
+}
+
+.search-btn {
+  font-size: 14px;
+  color: #89C611;
+  border-color: #89C611;
+}
+
+.search-btn:hover {
+  background-color: #B41B70;
   color: white;
 }
 
-#navbar {
+.form-select {
+  border-color: #89C611;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+}
+
+.form-control {
+  border-color: #89C611;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+}
+
+.modal-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: white;
+}
+
+.submit {
+  background-color: #B41B70;
+  font-size: 14px;
+}
+
+#form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.edit-submit {
+  background-color: #B41B70;
+  font-size: 14px;
+  border: none;
+}
+
+.edit-submit:hover {
+  background-color: #D12082;
+  border: none;
+}
+
+#cancel-btn {
   background-color: #333131;
-  height: 35px;
+  font-size: 14px;
+  border: none;
+}
+
+#cancel-btn:hover {
+  background-color: #686F71;
+  border: none;
+}
+
+.no-cards {
+  margin: auto;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  opacity: 0.5;
+  margin-top: 100px;
+
+}
+
+#view {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#single-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#single-definition {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+#single-date {
+  font-size: 12px;
+  color: gray;
+  opacity: 0.7;
+}
+
+.view-entry {
+  background-color: #2D3031;
+}
+
+.single-btns {
+  display: inline-block;
+  align-items: flex-end;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.single {
+  font-size: 12px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background-color: #89C611;
+  border: none;
+  opacity: 0.8;
+}
+
+.single:hover {
+background-color: #595B5F;
+}
+
+#single-langtech {
+  display: flex;
+  color: #89C611;
+  font-weight: extra-bold;
+}
+
+.single-tech {
+  justify-content: flex-start;
+}
+
+.single-delete {
+  background-color: #B41B70;
+}
+
+#home-title {
+  color: #89C611;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin-top: 300px;
+}
+
+#sign-in {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 18px;
+  background-color: #B41B70;
 }
